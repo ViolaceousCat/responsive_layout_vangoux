@@ -1,6 +1,6 @@
 # Responsive Layout Vangoux
 
-### [Site link](https://gromcode.github.io/responsive_layout_vangoux/)
+### [Site link](https://violaceouscat.github.io/responsive_layout_vangoux/)
 
 Layout supports mobile (up-to-640) and desktop (up-to-1024) versions
 
