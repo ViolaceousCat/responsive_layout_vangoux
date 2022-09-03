@@ -233,6 +233,7 @@
   width: 540px;
   padding: 40px;
   box-shadow: 0px 20px 60px rgba(25, 104, 252, 0.1);
+  background: #fff;
 }
 .reviews_review:first-child {
   margin-bottom: 50px;
@@ -300,6 +301,7 @@
   height: 180px;
   box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
   margin-bottom: 40px;
+  background: #fff;
 }
 .workflow-steps .workflow-step:last-child {
   margin-bottom: 0;
@@ -439,11 +441,13 @@
   font-size: 16px;
   line-height: 30px;
   text-align: left;
-  margin: 30px 40px;
+  padding: 30px 40px;
+  background: #fff;
+  margin: 0;
 }
 @media screen and (min-width: 1024px) {
   .features__list .features-step_description {
-    margin: 40px 40px;
+    padding: 40px;
   }
 }
 .features__list .features-step_dot-img {
@@ -496,6 +500,7 @@
   margin-right: 20px;
   padding: 20px;
   box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+  background: #fff;
 }
 .users_container_user:last-child {
   margin-right: 0;
@@ -568,6 +573,7 @@
   display: flex;
   align-items: center;
   box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+  background: #fff;
   color: #000;
 }
 .purposes_container_purpose:first-child {
@@ -682,6 +688,7 @@
 }
 .stories_story-cards .stories_story-card {
   width: 520px;
+  background: #fff;
 }
 @media screen and (min-width: 1024px) {
   .stories_story-cards .stories_story-card {
@@ -824,6 +831,7 @@ html {
   width: 100%;
   overflow: hidden;
   color: #11223f;
+  background: linear-gradient(180deg, rgba(25, 104, 252, 0.0001) 0%, rgba(25, 104, 252, 0.05) 23.07%, rgba(25, 104, 252, 0.0001) 99.94%, rgba(25, 104, 252, 0.05) 100%);
 }
 @media screen and (min-width: 1024px) {
   .page {
@@ -832,6 +840,8 @@ html {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png);
+    background-repeat: no-repeat;
   }
 }
 
