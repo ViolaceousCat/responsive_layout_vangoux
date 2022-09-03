@@ -438,7 +438,7 @@
 .features__list .features-step_description {
   font-size: 16px;
   line-height: 30px;
-  text-align: center;
+  text-align: left;
   margin: 30px 40px;
 }
 @media screen and (min-width: 1024px) {
