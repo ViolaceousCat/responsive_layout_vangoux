@@ -1,0 +1,72 @@
+.headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include for-big-screen {
+    position: relative;
+    margin: 150px 160px 0 160px;
+  }
+
+  &_main {
+    margin: 80px;
+
+    @include for-big-screen {
+      z-index: 1;
+      position: relative;
+      margin: 0;
+      margin-right: 520px;
+    }
+
+    &_title {
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 60px;
+      letter-spacing: 1px;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    &_description {
+      font-size: 20px;
+      line-height: 40px;
+      margin: 0;
+      margin-bottom: 40px;
+    }
+
+    &_button {
+      background-color: #1968fc;
+      color: #fff;
+      width: 300px;
+      height: 50px;
+      border: none;
+      margin-bottom: 80px;
+      text-transform: uppercase;
+
+      @include for-big-screen {
+        margin: 0;
+      }
+
+      &_text-1 {
+        @include for-big-screen {
+          display: none;
+        }
+      }
+
+      &_text-2 {
+        display: none;
+        @include for-big-screen {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &_img {
+    max-width: 100%;
+    @include for-big-screen {
+      position: absolute;
+      top: 50px;
+      right: 0;
+    }
+  }
+}

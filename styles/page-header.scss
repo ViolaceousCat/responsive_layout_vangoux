@@ -1,0 +1,65 @@
+.page-header {
+  padding: 40px 400px 0 80px;
+
+  @include for-big-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 160px;
+    margin-top: 30px;
+    padding: 0;
+  }
+
+  &_logo {
+    display: flex;
+    align-items: center;
+
+    &_name {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      margin-left: 10px;
+      color: #1968fc;
+    }
+  }
+
+  &_navigation {
+    display: none;
+    margin-left: 220px;
+    width: 540px;
+
+    @include for-big-screen {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &_item {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      text-decoration: none;
+      color: #000;
+      text-align: center;
+    }
+  }
+
+  &_button {
+    display: none;
+    width: 180px;
+    height: 50px;
+    background-color: #1968fc;
+    color: #fff;
+    border: none;
+    box-shadow: 0px 10px 40px rgba(25, 104, 252, 0.3);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-shadow: 0px 10px 40px rgba(25, 104, 252, 0.2);
+    margin-left: 60px;
+
+    @include for-big-screen {
+      display: block;
+    }
+  }
+}

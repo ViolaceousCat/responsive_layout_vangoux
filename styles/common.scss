@@ -1,0 +1,70 @@
+$big: 1024px;
+$dark-blue: #11223f;
+
+@mixin for-small-screen {
+  @media screen and (max-width: ($big - 1)) {
+    @content;
+  }
+}
+
+@mixin for-big-screen {
+  @media screen and (min-width: $big) {
+    @content;
+  }
+}
+
+.common_title {
+  margin: 0 auto;
+
+  @include for-big-screen {
+    position: relative;
+  }
+
+  &_text {
+    width: 520px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 10px;
+
+    @include for-big-screen {
+      width: 1120px;
+    }
+  }
+
+  &_underline {
+    width: 80px;
+    height: 2px;
+    background: #1968fc;
+    box-shadow: 0px 2px 0px #d1e1fe;
+    margin-bottom: 48px;
+
+    @include for-big-screen {
+      margin-bottom: 38px;
+      position: absolute;
+      left: -40px;
+    }
+  }
+}
+
+.main_mobile_title {
+  width: 520px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 60px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 10px;
+
+  @include for-big-screen {
+    display: none;
+  }
+}
+
+.main_desktop_title {
+  @include for-small-screen {
+    display: none;
+  }
+}

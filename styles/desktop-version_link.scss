@@ -1,0 +1,21 @@
+.desktop-version_link {
+  display: flex;
+  align-items: center;
+  height: 180px;
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/PleaseVisitDesktopSiteSectionBackground.png);
+  padding: 30px 60px;
+
+  &_item {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  @include for-big-screen {
+    display: none;
+  }
+}

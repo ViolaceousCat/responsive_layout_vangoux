@@ -1,0 +1,34 @@
+@import 'common.scss';
+@import 'page-header.scss';
+@import 'headline.scss';
+@import 'desktop-version_link.scss';
+@import 'reviews.scss';
+@import 'workflow.scss';
+@import 'features.scss';
+@import 'users.scss';
+@import 'purposes.scss';
+@import 'consultation.scss';
+@import 'stories.scss';
+@import 'page-footer.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Mulish', sans-serif;
+}
+
+.page {
+  width: 100%;
+  overflow: hidden;
+  color: $dark-blue;
+
+  @include for-big-screen {
+    width: 1440px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}

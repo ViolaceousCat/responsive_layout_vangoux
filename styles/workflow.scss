@@ -1,0 +1,99 @@
+.workflow {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+
+  &-steps {
+    display: flex;
+    flex-direction: column;
+
+    @include for-big-screen {
+      flex-direction: row;
+      margin: auto;
+    }
+
+    .workflow-step {
+      position: relative;
+      padding: 40px;
+      margin: 0 auto;
+      width: 520px;
+      height: 180px;
+      box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+      margin-bottom: 40px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      @include for-big-screen {
+        width: 320px;
+        height: 220px;
+        margin: 38px 80px 0 0;
+
+        &:nth-child(2) {
+          margin-top: 78px;
+        }
+
+        &:last-child {
+          margin-right: 0;
+          margin-top: 118px;
+        }
+      }
+
+      &_subtitle {
+        position: relative;
+        margin: 0;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 20px;
+        text-transform: uppercase;
+
+        &_img {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+
+      &_title {
+        margin: 0;
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #1967fa;
+      }
+
+      &_description {
+        margin: 0;
+        font-size: 16px;
+        line-height: 30px;
+      }
+
+      &_dot-img {
+        position: absolute;
+        bottom: -5px;
+        right: -5px;
+      }
+
+      &_connection {
+        position: absolute;
+        left: 60px;
+        bottom: -40px;
+        width: 1px;
+        height: 40px;
+        border-right: 2px dashed #1968fc;
+
+        @include for-big-screen {
+          width: 80px;
+          height: 1px;
+          top: 50%;
+          left: 320px;
+          border-right: none;
+          border-bottom: 2px dashed #1968fc;
+        }
+      }
+    }
+  }
+}
